@@ -20,14 +20,14 @@ const DICE_SYMBOLS = [ //an array of dice symbols, does not change
   
  function rollDiceFiveTimes(rounds) { //create DRY function; roll dice five times
 
-  currentTotal = 0;
-  rolledDiceIndices = [];
+  currentTotal = 0; //fresh start at zero each round
+  rolledDiceIndices = []; // array of dice rolled refreshed at zero as well
   
   // Loop five times
   for (let i = 0; i < 5; i++) { //start w the first(0) instance, every instance is less than five, 
     const randomIndex = Math.floor(Math.random() * 6);
     rolledDiceIndices.push(randomIndex);
-  
+  //whatever gets rolled will be pushed into a factor of 6 (or multiplied by 6?)
     // The first array index is 0, so the "value" of this die
     // is *the index plus one!*
     currentTotal = currentTotal + randomIndex + 1;
@@ -57,7 +57,7 @@ const DICE_SYMBOLS = [ //an array of dice symbols, does not change
   //line the array of dice symbols horizontally with a space between, create new line for each roll
   
  }
-
+// call function to begin rounds
  rollDiceFiveTimes("First")
  rollDiceFiveTimes("Second")
  rollDiceFiveTimes("Third")
