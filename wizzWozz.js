@@ -11,4 +11,4 @@ function wizzWozz () {
         }
     }
 }
-wizzWozz();
+wizzWozz(); //in order to run named function, it has to be called
