@@ -17,8 +17,8 @@ function myFavoriteColor(){
         } else {
             console.log(randomColors);
         }
-    } curent problem: array element are'nt random, statement wont display
+    } //curentproblem: array element are'nt random, statement wont display
 }
 myFavoriteColor(favColor)
 
-}
+
