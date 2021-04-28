@@ -1,5 +1,5 @@
 'use strict'; //don't let node silently create global variables
-
+//install json and cards packages in node
 const promtSync = require('prompt-sync')({ sigint: true });
 const { decks } = require('cards');//object destructuring
 
