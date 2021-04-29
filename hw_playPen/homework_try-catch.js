@@ -3,7 +3,7 @@
 
 function divideTwoNumbers(x, y) {
     if (parseFloat(x) !== x) {
-      throw new Error('x is not a number');//put each of these into try block
+      throw new Error('x is not a number');//put each of these into try block?
     }
     if (parseFloat(y) !== y) {
       throw new Error('y is not a number');
