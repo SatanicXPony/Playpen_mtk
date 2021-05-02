@@ -15,14 +15,14 @@
     </div>
   </div>
   <script type="text/javascript">
-    function myButtonHandler(){
+    function myButtonHandler() {
       
       const myInput = document.querySelector('#my-input');
       const myDisplay = document.querySelector('#my-display');
 
       console.log('Input value:', myInput.value);
       console.log('Displayed value:', myDisplay.innerHTML);
-    };
+    }
   </script>
 </body>
 </html>
