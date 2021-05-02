@@ -16,9 +16,11 @@
   </div>
   <script type="text/javascript">
     function myButtonHandler() {
-
-      const myInput = document.querySelector('#my-input').value;
-      const myDisplay = document.querySelector('#my-display');
+    
+      const myInput = document.querySelector('#my-input').value; //take in the value of the form
+      const myDisplay = document.querySelector('#my-display').innerHTML = myInput; //and display the text from input variable
+        
+        
 
       console.log('Input value:', myInput.value);
       console.log('Displayed value:', myDisplay.innerHTML);
