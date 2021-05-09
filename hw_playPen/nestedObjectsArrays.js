@@ -12,5 +12,7 @@ const medicalStaff = {
         ward: "Obstentrics"
     }]
 };
+console.log(medicalStaff.charges[0]);
 
-console.log(medicalStaff.occupation);
+/*wanted to make schhedule; needed const for weekdays and loop 
+so that week days would return patient and ward*/
