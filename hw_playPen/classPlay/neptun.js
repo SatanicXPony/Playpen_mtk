@@ -6,7 +6,7 @@ class Cipu {
   }
   //class specific function or method utilizes class data
   personify() {
-    return `${thi.name} is an animated impression of the PC-Engine TurboGrafx-16`;
+    return `${this.name} is an animated impression of the PC-Engine TurboGrafx-16`;
   }
 }
 let cast = new Cipu("Planeptune", "Peashy", "Goddess");
