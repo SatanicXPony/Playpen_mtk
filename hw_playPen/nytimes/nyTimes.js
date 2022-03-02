@@ -1,1 +1,0 @@
-//create query selector for each book to render data for image?
