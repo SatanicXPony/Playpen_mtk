@@ -15,7 +15,6 @@ class Cipu {
 //the cast is a new instance for cpu
 let cast = new Cipu("Planeptune", "Peashy", "Goddess");
 console.log(cast.personify());
-//create main onject for universe then extended classes for the charcters
 
 //goal: need to display characters inside each planet,
-//note: maybe just set planets as buttons instead of modals, just describe planets in headings
+//create dropdowns for planets, change size so that it takes up container width
