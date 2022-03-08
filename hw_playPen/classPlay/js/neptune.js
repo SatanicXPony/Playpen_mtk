@@ -1,34 +1,49 @@
-//start with parent class to be extended by others
-//class typeMoonSeries
+//1. start with parent class to be extended by others
 class typeMooniverse {
   constructor() {
-    this._fateX;
+    this._fatexProfiles;
+  }
+  //2. getters and setters
+  get fatexMasters() {
+    return this._fatexProfiles((profile) => {
+      return profile.masters;
+    });
   }
 }
+
 class fatexSeries extends typeMooniverse {
   constructor() {
     super(); //taking on the methods for typemooniverse instead of rewriting
   }
 }
-// the object for the series
-this._fateX[
-  ({
+// 3. the object for the series to be accessed
+this._fatexProfiles = [
+  {
     //are the parens necessary?
     title: "fate / Extra",
     setting: "Moon Cell",
-    characters: "Rin Tohsaka", //how to write multiple char to be accessed
-    servants: "Saber",
+    masters: "Rin Tohsaka", //how to write multiple char to be accessed
+    servants: "Saber", //the servants have full names and servant titles idk how to write that out
     others: "Touko Aouzaki",
     anime: "true",
-    music: "Ali Project",
+    music: "Ranse Eroica",
   },
   {
     title: "fate/ Extra CCC",
-    setting: "Moon Cell",
-    characters: "Monji Gatou",
+    setting: "Moon Cell", //how to write the specific variations of worlds on moon cell?
+    masters: "Monji Gatou",
     servants: "Rider",
     others: "Kirei Kotomine",
     anime: "false",
-    music: "Kanon Wakashima",
-  })
+    music: "Sakura Meikyuu",
+  },
+  {
+    title: "fate/ Last Encore",
+    setting: "Moon Cell",
+    masters: "Misao Amari",
+    servants: "Archer",
+    others: "Fuma Kotaro",
+    anime: "true",
+    music: "Bright Burning Shout",
+  },
 ];
