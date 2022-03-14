@@ -5,12 +5,6 @@ body {
 .container {
   background-color: green;
 }
-#cipuPlanets {
-  border: 2px solid purple;
-}
 
-#cipuCharacters {
-  border: 1px dotted black;
-}
 /*an outline of where everything is and how styles are used in bulma*/
 /*dont stress about how atrocious the colors are use them as a guide*/
