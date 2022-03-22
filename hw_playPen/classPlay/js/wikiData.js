@@ -16,31 +16,58 @@ class fatexSeries extends typeMooniverse {
     super(); //taking on the methods for typemooniverse instead of rewriting
     this._fatexProfiles = [
       {
-        title: "fate / Extra",
+        title: "fate/ Extra", //can prob keep this bc its diffrent from series?
         setting: "Moon Cell",
-        masters: "Rin Tohsaka", //maybe seperate masters and spirits into objects within?
         spirits: "Saber", //change servants to heroic spirits, obj for their true names
         others: "Touko Aouzaki", //array
         anime: "true",
         music: "Ranse Eroica",
+        tabs: [
+          //characters display based on series
+          {
+            series: "fate/ Extra",
+            characters: [
+              {
+                name: "Rin Tohsaka",
+                species: [
+                  {
+                    race: "human",
+                    talent: "hacker",
+                    designation: [{}],
+                  },
+                ],
+              },
+            ],
+          },
+        ],
       },
       {
         title: "fate/ Extra CCC",
         setting: "Moon Cell", //how to write the specific variations of worlds on moon cell?
-        masters: "Monji Gatou",
         spirits: "Rider",
         others: "Kirei Kotomine",
         anime: "false",
         music: "Sakura Meikyuu",
+        tabs: [
+          {
+            series: "fate/ Extra CCC",
+            characters: [{}],
+          },
+        ],
       },
       {
         title: "fate/ Last Encore",
         setting: "Moon Cell",
-        masters: "Misao Amari",
         spirits: "Archer",
         others: "Fuma Kotaro",
         anime: "true",
         music: "Bright Burning Shout",
+        tabs: [
+          {
+            series: "fate/ Last Encore",
+            characters: [{}],
+          },
+        ],
       },
     ];
   }
