@@ -19,7 +19,7 @@ class fatexSeries extends typeMooniverse {
         title: "fate / Extra",
         setting: "Moon Cell",
         masters: "Rin Tohsaka", //maybe seperate masters and spirits into objects within?
-        servants: "Saber", //changer servants to heroic spirits, obj for their true names
+        spirits: "Saber", //change servants to heroic spirits, obj for their true names
         others: "Touko Aouzaki", //array
         anime: "true",
         music: "Ranse Eroica",
@@ -28,7 +28,7 @@ class fatexSeries extends typeMooniverse {
         title: "fate/ Extra CCC",
         setting: "Moon Cell", //how to write the specific variations of worlds on moon cell?
         masters: "Monji Gatou",
-        servants: "Rider",
+        spirits: "Rider",
         others: "Kirei Kotomine",
         anime: "false",
         music: "Sakura Meikyuu",
@@ -37,7 +37,7 @@ class fatexSeries extends typeMooniverse {
         title: "fate/ Last Encore",
         setting: "Moon Cell",
         masters: "Misao Amari",
-        servants: "Archer",
+        spirits: "Archer",
         others: "Fuma Kotaro",
         anime: "true",
         music: "Bright Burning Shout",

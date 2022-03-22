@@ -1,1 +1,1 @@
-//no idea what i planned on doing with this but ik its needed
+//step 1: create variable for data to be used?
