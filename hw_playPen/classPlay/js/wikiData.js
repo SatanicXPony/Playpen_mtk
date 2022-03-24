@@ -1,23 +1,21 @@
 //1. start with parent class to be extended by others
 class typeMooniverse {
-  constructor() {
-    this._fatexSettings;
-    //this._fatexMasters
-    //this._fatexServants
-    //this._others
-  }
+  _fatexSettings;
+  //_fatexMasters
+  //_fatexServants
+  //_others
+  constructor() {}
+
   //2. getters and setters
-  get fatexMasters() {
-    return this._fatexSettings((setting) => {
-      return setting.name; //needs to be rewritten or more getters added
-    });
+  fatexSettings() {
+    return this._fatexSettings[0].name;
   }
 }
 
 class fatexSeries extends typeMooniverse {
   constructor() {
     super(); //taking on the methods for typemooniverse instead of rewriting
-    this._settings = [
+    this._fatexSettings = [
       {
         //series(endpoints)
         id: "1",
@@ -28,6 +26,8 @@ class fatexSeries extends typeMooniverse {
             enviroment: "Moon Cell",
           },
         ],
+      },
+      {
         id: "2",
         name: "fate/ CCC",
         locations: [
@@ -36,6 +36,8 @@ class fatexSeries extends typeMooniverse {
             enviroment: "Moon Cell",
           },
         ],
+      },
+      {
         id: "3",
         name: "fate/ Last Encore",
         locations: [
@@ -48,8 +50,6 @@ class fatexSeries extends typeMooniverse {
     ];
   }
 }
+let fatex = new fatexSeries();
 
-//purpose: set up for tabs or the seperate sections for the characters to display based on series
-//next? set up for characters seperating them from master, servant and others
-//note: the 'homepage' display will show all characters based on tab, on click will
-//send to character's profile 'page' not sure how to seperate the two
+console.log(fatex.fatexSettings());
