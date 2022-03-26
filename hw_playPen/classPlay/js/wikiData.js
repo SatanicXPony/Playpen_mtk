@@ -1,7 +1,7 @@
 //1. start with parent class to be extended by others
 class typeMooniverse {
   _fatexSettings;
-  //_fatexMasters
+  //_fatexCharacters
   //_fatexServants
   //_others
   constructor() {}
@@ -53,3 +53,12 @@ class fatexSeries extends typeMooniverse {
 let fatex = new fatexSeries();
 
 console.log(fatex.fatexSettings());
+// need to access seperate classes of data for the settings, and all characters
+//objects for masters, servants and others based on series
+//note each character has different stats e.g
+
+class _fatexCharacters {
+  constructor() {
+    this._fatexCharacters[{}];
+  }
+}
