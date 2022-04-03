@@ -58,7 +58,19 @@ class _fatexCharacters {
   constructor() {
     this.fatexCharacters[{}];
   }
-  //getter for names
+  //getters for character names tba later
+  //use static method for series titles instead of creating new instances
+  static series1() {
+    console.log("Fate/ Extra"); //change cl's to return
+  }
+  static series2() {
+    console.log("Fate/ CCC"); //these can be non static also, w/ diff calls
+  }
+  static series3() {
+    console.log("Fate/ Last Encore");
+  }
 }
-//use static method for series titles instead of creating new instances
-//not sure if this will replace the getter on line 10
+//call for series1: fateCharacters.series1();?
+//not sure if static will replace the getter on line 10 &| the need for the name key altogether?
+//static for series will be added in f.e as literals for tab names
+//the settings object now feels rather pointless, could I create a static for it instead?
