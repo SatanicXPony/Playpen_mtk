@@ -54,9 +54,20 @@ let fatex = new fatexSeries();
 
 console.log(fatex.fatexSettings());
 
-class _fatexCharacters {
-  constructor() {
-    this.fatexCharacters[{}];
+class fatexCharacters {
+  constructor(status, appearsIn) {
+    this.status = status; //there are three: master, servant, other
+    this.appearsIn = appearsIn; //three: extra, ccc, last encore
   }
-  //getters for character names tba later
+  //getters for characters` status and appearsIn
+  getStatus() {
+    console.log(`This character is a ${this.status}`);
+  }
+  getSeries() {
+    console.log(`This character appears in ${this.appearsIn}`);
+  }
 }
+//note: declaring properties and methods using classes...
+//...want to display characters by their status and the series they appear in
+//originally thought to use static, turned out too much of a challenge
+//next: create data source for characters similar to settings object(?)
