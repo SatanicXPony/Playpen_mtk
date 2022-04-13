@@ -5,7 +5,6 @@ class typeMooniverse {
   //_fatexServants
   //_others
   constructor() {}
-
   //2. getters and setters
   fatexSettings() {
     return this._fatexSettings[0].name;
@@ -54,4 +53,16 @@ let fatex = new fatexSeries();
 
 console.log(fatex.fatexSettings());
 
-//composition: create object to store common features
+class fateCharacters {
+  constructor(name, term) {
+    this.name = name;
+    this.term = term;
+  }
+  sayHello() {
+    console.log(
+      `This character's name is ${this.name} their term is ${this.term}`
+    );
+  }
+}
+//JSON needed to establish data hierarchy
+//pm for raw
