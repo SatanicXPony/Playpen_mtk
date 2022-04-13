@@ -5,6 +5,11 @@ body {
 .container {
   background-color: green;
 }
-
-/*an outline of where everything is and how styles are used in bulma*/
-/*dont stress about how atrocious the colors are use them as a guide*/
+#fateSeries {
+  border: 2px solid blue;
+}
+.tabs is-boxed {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 4%);
+}
+/*on click needed to change tabs*/
