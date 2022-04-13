@@ -19,17 +19,17 @@ class fatexSeries extends typeMooniverse {
       {
         //series(endpoints)
         id: "1",
-        name: "fate / Extra",
+        name: "fate/Stay night",
         locations: [
           {
-            location: "Tsukumihara Academy",
-            enviroment: "Moon Cell",
+            location: "Fuyuki City",
+            enviroment: "Tsukihime",
           },
         ],
       },
       {
         id: "2",
-        name: "fate/ CCC",
+        name: "fate/Extra ",
         locations: [
           {
             location: "Far Side",
