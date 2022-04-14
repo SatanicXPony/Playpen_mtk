@@ -4,7 +4,7 @@ class typeMooniverse {
   //_fatexCharacters
   //_fatexServants
   //_others
-  constructor() {}
+  constructor() {} //for each instance return setting and series
   //2. getters and setters
   fatexSettings() {
     return this._fatexSettings[0].name;
@@ -62,6 +62,9 @@ class fateCharacters {
     console.log(
       `This character's name is ${this.name} their term is ${this.term}`
     );
+    // characterIsServant() {
+    //   console.log(`${this.term.value}`);
+    // };
   }
 }
 //JSON needed to establish data hierarchy
