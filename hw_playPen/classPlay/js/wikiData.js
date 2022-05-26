@@ -5,7 +5,7 @@ class typeMooniverse {
   //_fatexServants
   //_others
   constructor() {} //for each instance return setting and series
-  //2. getters and setters
+  //2. Methods and properties
   fatexSettings() {
     return this._fatexSettings[0].name;
   }
