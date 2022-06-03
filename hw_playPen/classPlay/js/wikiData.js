@@ -16,35 +16,9 @@ class fatexSeries extends typeMooniverse {
     super(); //taking on the methods for typemooniverse instead of rewriting
     this._fatexSettings = [
       {
-        //series(endpoints)
-        id: "1",
-        name: "fate/Stay night",
-        locations: [
-          {
-            location: "Fuyuki City",
-            enviroment: "Tsukihime",
-          },
-        ],
-      },
-      {
-        id: "2",
-        name: "fate/Extra ",
-        locations: [
-          {
-            location: "Far Side",
-            enviroment: "Moon Cell",
-          },
-        ],
-      },
-      {
-        id: "3",
-        name: "fate/ Last Encore",
-        locations: [
-          {
-            location: "a thousand years into the future 3020 A.D",
-            enviroment: "Moon Cell",
-          },
-        ],
+        /** everything in here should
+         * call on the series info from fateSer?
+         */
       },
     ];
   }
@@ -67,5 +41,3 @@ class fateCharacters {
     // };
   }
 }
-//JSON needed to establish data hierarchy
-//pm for raw
