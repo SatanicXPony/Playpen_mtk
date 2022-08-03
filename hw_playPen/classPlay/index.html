@@ -51,13 +51,60 @@
     <div id="fateCharsDisplay"></div>
   </div>
   <!--component pages for styles to keep html short-->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Footer stuff goes here.</strong>
+    </div>
+  </footer>
+  <script>
+    class Vehicle {
+      constructor(numberofwheels) {
+        this.numberofwheels = numberofwheels
+        this.issteerable = false
+      }
+      honk() {
+        console.log('honk!')
+        console.log(this.numberofwheels)
+      }
+      canmove() { //functionality related to class
+        // check to see if numvber of wheels is zero, 
+        if (this.numberfowheels === 0) {
+          //if ti's zero Vehcile cant move
+          return false
+        }
+        //2. check if vehicle is steerable, if not it still cant move
+        if (this.issteerable === false) {
+          return false
+        }
 
+        //3. if both pass vehicle is moveable
+        return true
+
+      }
+    }
+    class Car extends Vehicle {
+      constructor(numberofwheels, color) {
+        super(numberofwheels)
+        this.color = color
+      }
+      drive() {
+        console.log('were driving!')
+      }
+    }
+    function main() {
+      const myVehicle = new Car(4, 'blue')
+      console.log(myVehicle)
+      //myVehicle.drive()
+      // myVehicle.issteerable = true
+      // console.log(myVehicle.canmove())
+
+    }
+    main()
+  </script>
 </body>
-<footer class="footer">
-  <div class="content has-text-centered">
-    <p>
-      <strong>Footer stuff goes here.</strong>
-  </div>
-</footer>
+
 
 </html>
+
+//methods: actions performed on an instance not information about
