@@ -10,16 +10,28 @@ class FatexSeries {
   constructor(fatexSettings) {
     this._fatexSettings = fatexSettings;
   }
+
+  getSeriesInfo() {
+    return (
+      this._fatexSettings.seriesNum + " - " + this._fatexSettings.pageStart
+    );
+  }
 }
 let fatex = new FatexSeries({
   foo: "bar",
+  seriesNum: 3,
+  pageStart: 45,
 });
 let fatex2 = new FatexSeries({
   hello: "world",
+  seriesNum: 5,
+  pageStart: 95,
 });
 const allOfThem = [fatex, fatex2];
 
-console.log(fatex.fatexSettings());
+console.log(fatex2.getSeriesInfo());
+
+// console.log(fatex.fatexSettings());
 
 class fateCharacters {
   constructor(name, term) {
@@ -35,3 +47,6 @@ class fateCharacters {
     // };
   }
 }
+//focus on class and constructor before inheritance
+
+//try project thats not my own before doing my own
