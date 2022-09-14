@@ -10,7 +10,7 @@ class FatexSeries {
   constructor(fatexSettings) {
     this._fatexSettings = fatexSettings;
   }
-
+  //where are the properties?
   getSeriesInfo() {
     return (
       this._fatexSettings.seriesNum + " - " + this._fatexSettings.pageStart
@@ -26,8 +26,8 @@ let fatex2 = new FatexSeries({
   hello: "world",
   seriesNum: 5,
   pageStart: 95,
-});
-const allOfThem = [fatex, fatex2];
+}); //am I supposed to start nesting for all the characters names and terms and
+const allOfThem = [fatex, fatex2]; //change variable name to typeMoon to keep in
 
 console.log(fatex2.getSeriesInfo());
 
